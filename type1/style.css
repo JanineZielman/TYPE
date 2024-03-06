@@ -24,3 +24,19 @@ canvas {
   /* bottom: 2.2rem; */
   /* left: 1rem; */
 }
+
+.dg .c .slider-fg, dg .cr.function{
+  background-color: white;
+}
+
+.dg .cr.number input[type=text]{
+  color: white;
+}
+
+.dg .cr.number, .dg .cr.boolean, .dg .cr.function{
+  border-color: white;
+}
+
+.dg .c input[type=checkbox]{
+  filter: grayscale(1);
+}
