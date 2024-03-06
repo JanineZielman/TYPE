@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overscroll-behavior: none;
+}
+
+canvas {
+  display: block;
+}
+
+#sketch {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* gui position */
+#gui {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  /* translate: 0 calc(-100%); */
+  /* bottom: 2.2rem; */
+  /* left: 1rem; */
+}

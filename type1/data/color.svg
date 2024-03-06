@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 239.52 239.52">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <rect width="239.52" height="239.52" transform="translate(239.52 239.52) rotate(180)" style="fill: aqua; stroke-width: 0px;"/>
+    <g>
+      <rect x="87.77" y="179.81" width="34.45" height="59.31" transform="translate(209.98 418.93) rotate(180)" style="fill: #0019ff; stroke-width: 0px;"/>
+      <rect x="35.76" y="179.81" width="34.45" height="59.31" transform="translate(105.96 418.93) rotate(180)" style="fill: #0019ff; stroke-width: 0px;"/>
+      <rect x=".8" y="179.81" width="17.22" height="59.31" transform="translate(18.82 418.93) rotate(180)" style="fill: #0019ff; stroke-width: 0px;"/>
+      <rect x=".8" y=".4" width="52.18" height="179.41" transform="translate(53.78 180.21) rotate(180)" style="fill: #0019ff; stroke-width: 0px;"/>
+    </g>
+    <rect x="122.21" y="90.1" width="104.36" height="149.38" transform="translate(348.79 329.59) rotate(180)" style="fill: #f0f; stroke-width: 0px;"/>
+  </g>
+</svg>
