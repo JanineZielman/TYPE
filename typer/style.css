@@ -12,8 +12,9 @@ body{
 
 .editor img{
   height: 10vw;
-  max-width: 7vw;
-  object-fit: cover;
+  width: 9vw;
+  /* max-width: 9vw; */
+  /* object-fit: cover; */
 }
 
 .editor div{
