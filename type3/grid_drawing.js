@@ -1,7 +1,6 @@
 let s1 = function(sketch) {
 
   const squares = [];
-  let img, img2, img3, img4, img5, img6;
   let imageList = [];
   let slider;
   let value = 40;
@@ -22,33 +21,33 @@ let s1 = function(sketch) {
   sketch.setup = function() {
     sketch.createCanvas(550, 580);
     slider = sketch.createSlider(10, 100);
-    slider.position(100 + sketch.canvas.offsetLeft, 35);
+    slider.position(10 + sketch.canvas.offsetLeft, 10 + sketch.canvas.offsetTop);
     slider.size(200);
     sketch.angleMode(sketch.DEGREES);
 
     checkbox1 = sketch.createCheckbox('grid', false);
-    checkbox1.position(320 + sketch.canvas.offsetLeft, 35);
+    checkbox1.position(220 + sketch.canvas.offsetLeft, 10 + sketch.canvas.offsetTop);
 
     fade = sketch.createCheckbox('fade', false);
-    fade.position(380 + sketch.canvas.offsetLeft, 35);
+    fade.position(280 + sketch.canvas.offsetLeft, 10 + sketch.canvas.offsetTop);
 
     checkbox5 = sketch.createCheckbox('refresh', false);
-    checkbox5.position(10 + sketch.canvas.offsetLeft, 60);
+    checkbox5.position(10 + sketch.canvas.offsetLeft, 35 + sketch.canvas.offsetTop);
 
     checkbox2 = sketch.createCheckbox('spin', false);
-    checkbox2.position(90 + sketch.canvas.offsetLeft, 60);
+    checkbox2.position(90 + sketch.canvas.offsetLeft, 35 + sketch.canvas.offsetTop);
 
     checkbox6 = sketch.createCheckbox('rotate', false);
-    checkbox6.position(150 + sketch.canvas.offsetLeft, 60);
+    checkbox6.position(150 + sketch.canvas.offsetLeft, 35 + sketch.canvas.offsetTop);
 
     checkbox3 = sketch.createCheckbox('colors', false);
-    checkbox3.position(220 + sketch.canvas.offsetLeft, 60);
+    checkbox3.position(220 + sketch.canvas.offsetLeft, 35 + sketch.canvas.offsetTop);
 
     checkbox4 = sketch.createCheckbox('random', false);
-    checkbox4.position(290 + sketch.canvas.offsetLeft, 60);
+    checkbox4.position(290 + sketch.canvas.offsetLeft, 35 + sketch.canvas.offsetTop);
 
     eraser = sketch.createCheckbox('eraser', false);
-    eraser.position(470 + sketch.canvas.offsetLeft, 35);
+    eraser.position(470 + sketch.canvas.offsetLeft, 10 + sketch.canvas.offsetTop);
     
     sketch.background(255);
     
@@ -70,9 +69,6 @@ let s1 = function(sketch) {
       }
     });
     
-  
-    sketch.textSize(20);
-    sketch.text("tile size",10,25);
     
   }
 
@@ -86,6 +82,14 @@ let s1 = function(sketch) {
   sketch.mouseDragged = function() {
     for (let sq of squares) {
       sq.checkMouse();
+    }
+  }
+
+  sketch.keyPressed = function() {
+    if (sketch.keyCode === 32) {
+      var image = sketch.canvas.toDataURL("image/png").replace("image/png", "image/octet-stream")
+      window.location.href=image;
+      console.log(image)
     }
   }
 

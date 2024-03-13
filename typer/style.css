@@ -1,0 +1,17 @@
+.editor{
+  border: 1px solid black;
+  min-height: 100vh;
+  font-size: 0;
+  padding: 0 24px;
+}
+
+.editor img{
+  height: 10vw;
+  max-width: 7vw;
+  object-fit: cover;
+}
+
+.editor div{
+  display: inline-block;
+  width: 3.5vw;
+}
