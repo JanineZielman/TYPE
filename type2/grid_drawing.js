@@ -5,7 +5,7 @@ let value = 40;
 let value2 = 40;
 let current;
 
-let checkbox1, checkbox2, checkbox3;
+let checkbox1, checkbox2, checkbox3, checkbox4;
 
 
 function preload() {
@@ -29,6 +29,9 @@ function setup() {
 
   checkbox3 = createCheckbox();
   checkbox3.position(610, 8);
+
+  checkbox4 = createCheckbox();
+  checkbox4.position(730, 8);
   
   background(255);
   
@@ -59,6 +62,7 @@ function setup() {
   text("grid",350,25);
   text("spin",450,25);
   text("colors",550,25);
+  text("random",660,25);
 }
 
 function draw() {
@@ -117,9 +121,20 @@ class Square {
      
       if (checkbox3.checked()) {
         fill(100+ this.r, 50, 50+this.b);
-        rect(0,0,this.r/10, this.size);
+        if (checkbox4.checked()) {
+          fill(random(255),random(255),random(255));
+          ellipse(0,0,random(5,50), random(5,50));
+        } else {
+          rect(0,0,this.r/10, this.size);
+        }
+        
       } else{
-        image(this.current, 0,0, this.size, this.size);
+        if (checkbox4.checked()) {
+          fill(0);
+          ellipse(0,0,random(5,50), random(5,50));
+        } else {
+          image(this.current, 0,0, this.size, this.size);
+        }
       }
       // ellipse(0,0,random(5,50), random(5,50));
       // image(this.current, 0,0, this.size, this.size);
